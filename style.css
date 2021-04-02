@@ -23,7 +23,7 @@ body{
     padding: 2%;
     width: 70%;
     border-radius: 10pt;
-    box-shadow: 0px 10px 20px #0000001e;
+    box-shadow: 0px 10px 20px #00000042;
     transition-property: background-color;
     transition:ease-in 2s;
 }
@@ -179,7 +179,7 @@ a:hover{
 
     #top-container{
         width: 100%;
-        padding: 5%;
+        padding: auto;
     }
 
     #profilephoto{
@@ -188,6 +188,11 @@ a:hover{
     position: absolute;
     margin-left: 50%;
     margin-top: 5%;
+    }
+
+    h1, h2, h3{
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     h1{
@@ -228,11 +233,6 @@ a:hover{
 
     .top{
         display: block;
-    }
-
-    #top-container{
-        width: 100%;
-        padding: 5%;
     }
 
     #profilephoto{
