@@ -32,7 +32,7 @@ body{
 }
 
 #profilephoto{
-    height: 250px;
+    height: 15em;
     width: 25%;
     margin-right: 20px;
     background-color: #bbb;
@@ -78,11 +78,11 @@ p{
 }
 
 .linkbutton{
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10%;
     margin-top: 10%;
-    background-color: #fe346e;
+    background-color: rgb(239, 77, 91);
     border-radius: 15pt;
     display: block;
     transition-property: width, height, opacity, box-shadow;
@@ -118,9 +118,13 @@ p{
     width: 70%;
 }
 
-.icon{
-    width: 10%;
-    height: 10%;
-    vertical-align:middle;
+.fab, .fas{
+    font-size: x-large;
     padding-right: 50%;
+    color: white;
+    transition: color ease-in 0.5s;
+}
+
+.fab:hover, .fas:hover{
+    color: black;
 }
