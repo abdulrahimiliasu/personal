@@ -1,11 +1,11 @@
 body{
-    background: #001220 url('images/blob-scene-haikei.svg') no-repeat fixed;
     /*
     background-color: #001220;
     background-image: url('images/blob-scene-haikei.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     */
+    background: #001220 url('images/blob-scene-haikei.svg') no-repeat fixed;
     background-size: cover;
     font-family: Lato, sans-serif;
 }
@@ -32,8 +32,8 @@ body{
 }
 
 #profilephoto{
-    height: 15em;
-    width: 25%;
+    height: 200px;
+    width: 200px;
     margin-right: 20px;
     background-color: #bbb;
     border-radius: 50%;
@@ -60,11 +60,13 @@ h1{
 h2{
     color: rgb(180, 180, 180);
     font-size:medium;
+    font-weight: normal;
     line-height: 2;
 }
 h3{
     color: rgb(155, 155, 155);
     font-size:small;
+    font-weight: normal;
     line-height: 2;
 }
 
@@ -78,7 +80,6 @@ p{
 }
 
 .linkbutton{
-    color: white;
     text-decoration: none;
     padding: 10%;
     margin-top: 10%;
@@ -90,10 +91,7 @@ p{
 }
 
 .linkbutton:visited{
-    text-decoration: none;
-    padding: 2%;
     background-color: #b21f66;
-    border-radius: 20pt;
 }
 
 .linkbutton:hover, .linkbutton:active{
@@ -101,9 +99,6 @@ p{
     background-color: #ffbd69;
     box-shadow: 0px 10px 20px #0000007c;
     transform: scale(1.1, 1.1);
-}
-.linkbutton:hover::after{
-    opacity: 1;
 }
 
 .middle{
@@ -118,13 +113,177 @@ p{
     width: 70%;
 }
 
+lottie-player{
+    width: 100%;
+    height: 100%;
+}
+
 .fab, .fas{
     font-size: x-large;
     padding-right: 50%;
-    color: white;
-    transition: color ease-in 0.5s;
 }
 
-.fab:hover, .fas:hover{
+a {
+    color: white;
+}
+a:hover{
     color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #profilephoto{
+        height: 100px;
+        width: 100px;
+    }
+    
+    h1{
+        font-size: 3vh; 
+        line-height: 1;
+    }
+    h2{
+        font-size:small;
+        line-height: 2;
+    }
+    h3{
+        font-size:x-small;
+        line-height: 2;
+    }
+    
+    p{
+        font-size: x-small;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+
+    .linkbutton{
+        font-size: medium;
+        margin-top: 20%;
+        display: block;
+    }
+    .fas, .fab{
+        font-size: medium;
+        /* padding-right: 30%; */
+    }
+    lottie-player{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 496px) {
+
+    .top{
+        display: block;
+    }
+
+    #top-container{
+        width: 100%;
+        padding: 5%;
+    }
+
+    #profilephoto{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 5%;
+    }
+
+    h1{
+        font-size: 3vh; 
+        line-height: 1;
+    }
+    h2{
+        font-size:small;
+        line-height: 2;
+    }
+    h3{
+        font-size:x-small;
+        line-height: 2;
+    }
+    
+    p{
+        font-size: x-small;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+
+    .linkbutton{
+        font-size: small;
+        margin-top: 20%;
+        display: block;
+        border-radius: 10pt;
+    }
+    .fas, .fab{
+        font-size: small;
+        /* padding-right: 30%; */
+    }
+    lottie-player{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 389px) {
+
+    .top{
+        display: block;
+    }
+
+    #top-container{
+        width: 100%;
+        padding: 5%;
+    }
+
+    #profilephoto{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 5%;
+    }
+    
+    h1{
+        font-size: large; 
+        line-height: 1;
+    }
+    h2{
+        font-size:small;
+        line-height: 2;
+    }
+    h3{
+        font-size:x-small;
+        line-height: 1;
+    }
+    
+    p{
+        font-size: x-small;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+    .middle{
+        display: block;
+    }
+    .middle-left{
+        width: auto;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 5%;
+    }
+    .middle-right{
+        width: 100%;
+    }
+    .linkbutton{
+        font-size: small;
+        border-radius: 15pt;
+    }
+    .fas, .fab{
+        font-size: small;
+        padding-right: 10%;
+    }
+    lottie-player{
+        width: 100%;
+        height: 100%;
+    }
 }
